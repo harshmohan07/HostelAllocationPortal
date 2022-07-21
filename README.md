@@ -1,5 +1,5 @@
 # Hostel Allocation Portal
-A web portal built for hostel students of COEP, which helps them with document verification, room allocation and every hostel related activites.
+A web portal built for hostel students of COEP, which helps them with document verification, room allocation and every hostel related activity.
 
 ## Built With
 <p float = "left">
