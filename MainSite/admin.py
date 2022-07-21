@@ -19,7 +19,8 @@ class StudentAdmin(admin.ModelAdmin):
         'feeReciept',
         'documnets_uploaded',
         'documnets_aproved',
-        'current_cgpa'
+        'current_cgpa',
+        'prefRec'
         ]
     actions = ["delete_selected"]
 

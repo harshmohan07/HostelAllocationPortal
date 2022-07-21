@@ -127,19 +127,19 @@
         </a>
     {% endif %}
 
-        {% if student.documnets_aproved and student.documents_uploaded  %}
+        {% if student.documnets_aproved and student.documnets_uploaded and not student.prefRec %}
         <a href="{% url 'select' %}">
             Select a Room
         </a>
         {% endif %}
 
-        {% if student.room_alloted %}
+        {% if student.room_allotted %}
         <a href="{% url 'repair' %}">
             Room Maintenance
         </a>
         {% endif %}
 
-        {% if student.room_alloted %}
+        {% if student.room_allotted %}
         <a href="{% url 'leave_status' %}">
             Apply Leave
         </a>

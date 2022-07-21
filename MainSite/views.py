@@ -257,6 +257,7 @@ def select(request):
                 student.pref3 = str(cd['preference3'])
                 student.pref4 = str(cd['preference4'])
                 student.pref5 = str(cd['preference5'])
+                student.prefRec = True
                 student.save()
                 messages.error(request,'Data Saved Successfully!')
                 return redirect('student_profile')
@@ -310,7 +311,7 @@ def select(request):
             for j in dict[i]:
                 if(j>student.current_cgpa):
                     pref[i] += 1
-        return render(request, 'BH5_Floor4.html', {'form': form, 'pref': pref})
+        return render(request, 'hostel.html', {'form': form, 'pref': pref})
 
 
 def repair(request):
@@ -435,19 +436,6 @@ def warden_remove_due(request):
         return HttpResponse('Invalid Login')
 
 
-def empty_rooms(request):
-    user = request.user
-    if user is not None:
-        if not user.is_warden:
-            return HttpResponse('Invalid Login')
-        elif user.is_active:
-            room_list = request.user.warden.hostel.room_set.filter(vacant=True).order_by('Number')
-            context = {'rooms': room_list}
-            return render(request, 'empty_rooms.html', context)
-        else:
-            return HttpResponse('Disabled account')
-    else:
-        return HttpResponse('Invalid Login')
 
 
 def present_leaves(request):

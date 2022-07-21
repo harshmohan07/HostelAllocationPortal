@@ -50,6 +50,7 @@ class Student(models.Model):
     pref3 = models.CharField(max_length=200, null=True, default=None)
     pref4 = models.CharField(max_length=200, null=True, default=None)
     pref5 = models.CharField(max_length=200, null=True, default=None)
+    prefRec = models.BooleanField(default=False)
 
     def __str__(self):
         return str(self.enrollment_no)
