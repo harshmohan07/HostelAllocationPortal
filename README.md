@@ -13,19 +13,19 @@ A web portal built for hostel students of COEP, which helps them with document v
 ## Hosted With
 
 ## Screenshots : 
-* Student Profile
+Student Profile
 ![Student Profile](https://github.com/OmKhare/HostelAllocationPortal/blob/main/Screenshots/Student_Profile.png)
 
-* Room Selection With Preference
+Room Selection With Preference
 ![Room Selection With Preference](https://github.com/OmKhare/HostelAllocationPortal/blob/main/Screenshots/Room_Selection_With_Preference.png)
 
-* Warden Profile
+Warden Profile
 ![Warden Profile](https://github.com/OmKhare/HostelAllocationPortal/blob/main/Screenshots/Accep_Reject_Leaves.png)
 
-* Document Verification by Warden
+Document Verification by Warden
 ![Document Verification](https://github.com/OmKhare/HostelAllocationPortal/blob/main/Screenshots/Document_Verification_By_Warden.png)
 
-* Leave Approval by Warden
+Leave Approval by Warden
 ![Leave Approval by Warden](https://github.com/OmKhare/HostelAllocationPortal/blob/main/Screenshots/Screenshot%202022-07-21%20232204.png)
 
 ## Contributors : 
