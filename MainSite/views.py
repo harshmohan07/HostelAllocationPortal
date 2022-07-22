@@ -9,24 +9,6 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.core.files.storage import FileSystemStorage
 from django.contrib import messages
 
-# MAJOR TODO's : 
-#
-# 1. Add the On Hover Drop Down for the Select Room thing {Will have to make some changes in the database of the room} .
-# 2. Correct all the routings in each and every if else for all the function in views.py
-# 3. Add Styling to all the pages wherever necessary.
-# 3. Add all the changes which you have made in the code and if possible add the code wherever TODO mentioned.
-# 4. Remove all the redundant {Code which we are currently not using for this project eg: Guest Login, Bookings, etc} and Dubugging code.
-# 5. Search for a proper alert message system. 
-# 6. Host this POS. {We'll do it together.}
-
-
-# MAJOR INFORMATION
-# ALL the passwords are set to '1234567890'
-# Students Usernames : 112003075, 112003076, 112003066
-# Wardens Usernames : warden1, warden2
-# Superuser : heyhm
-
-
 def home(request):
     return render(request, 'home.html')
 
@@ -48,7 +30,6 @@ def user_login(request):
                 else:
                     return HttpResponse('Disabled account')
             else:
-                #messages.warning(request,'Incorrect User Credentials')
                 form = LoginForm()
                 return render(request, 'login.html', {'form':form, 'messages':{'Incorrect User Credentials'}})
     else:
@@ -392,7 +373,7 @@ def document_verification(request):
         else:
             return HttpResponse('Invalid Login')
 
-# @login_required
+@login_required
 def warden_add_due(request):
     user = request.user
     if user is not None:
@@ -414,7 +395,7 @@ def warden_add_due(request):
         return HttpResponse('Invalid Login')
 
 
-# @login_required
+@login_required
 def warden_remove_due(request):
     user = request.user
     if user is not None:
