@@ -36,11 +36,11 @@ class RegistrationForm(forms.ModelForm):
 
 
 class SelectionFormFloor(forms.Form):
-    preference1 = forms.ChoiceField(choices=[(x, x) for x in range(101, 110)])
-    preference2 = forms.ChoiceField(choices=[(x, x) for x in range(101, 110)])
-    preference3 = forms.ChoiceField(choices=[(x, x) for x in range(101, 110)])
-    preference4 = forms.ChoiceField(choices=[(x, x) for x in range(101, 110)])
-    preference5 = forms.ChoiceField(choices=[(x, x) for x in range(101, 110)])
+    preference1 = forms.ChoiceField(choices=[(x, x) for x in range(101, 111)])
+    preference2 = forms.ChoiceField(choices=[(x, x) for x in range(101, 111)])
+    preference3 = forms.ChoiceField(choices=[(x, x) for x in range(101, 111)])
+    preference4 = forms.ChoiceField(choices=[(x, x) for x in range(101, 111)])
+    preference5 = forms.ChoiceField(choices=[(x, x) for x in range(101, 111)])
 
 class UploadForm(forms.Form):
     aadharCard = forms.CharField()

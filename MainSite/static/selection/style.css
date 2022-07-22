@@ -1,9 +1,4 @@
-/*.wrap {
-    background: white url("images/bg-01.jpg") no-repeat;
-
-
-}*/
-  @import url(https://fonts.googleapis.com/css?family=Inconsolata:700);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:700);
 
         body {
             font-family: 'Inconsolata', sans-serif;
